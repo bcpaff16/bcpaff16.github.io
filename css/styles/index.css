@@ -1,0 +1,323 @@
+html {
+  overflow-x: hidden;
+}
+
+.header {
+  background: url('../../images/landing/1.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 17.5vh;
+  height: 110vh;
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 130vh;
+  background: -moz-linear-gradient(top, rgba(23,23,27,0) 0%, rgba(23,23,27,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(23,23,27,0)), color-stop(100%, rgba(23,23,27,1)));
+  background: -webkit-linear-gradient(top, rgba(23,23,27,0) 0%, rgba(23,23,27,1) 100%);
+  background: -o-linear-gradient(top, rgba(23,23,27,0) 0%, rgba(23,23,27,1) 100%);
+  background: -ms-linear-gradient(top, rgba(23,23,27,0) 0%, rgba(23,23,27,1) 100%);
+  background: linear-gradient(to bottom, rgba(23,23,27,0) 0%, rgba(23,23,27,1) 100%);
+  z-index: 1;
+}
+
+.header__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  height: 100%;
+}
+
+.header__title {
+  font-size: 100px;
+  z-index: 2;
+}
+
+.header__divider {
+  background-color: #fff;
+  height: 10px;
+  width: 100px;
+  margin: 0 auto;
+  z-index: 2;
+}
+
+.header__slogan {
+  font-weight: 400;
+  font-size: 20px;
+  width: 20rem;
+  margin: 0 auto;
+  margin-top: 2em;
+  z-index: 2;
+}
+
+.header__icon-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+  z-index: 2;
+}
+
+.header__scroll-icon {
+  height: 75px;
+  width: 75px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__scroll-icon > i {
+  font-size: 50px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.tilted-section {
+  position: relative;
+  background-color: #fff;
+  z-index: 1;
+  text-align: center;
+}
+
+.tilted-section::after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+  bottom: 0;
+  transform: skewY(10deg);
+  transform-origin: left bottom;
+}
+
+.tilted-section::before {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden;
+  top: 0;
+  transform: skewY(10deg);
+  transform-origin: 100% 0;
+}
+
+.tilted-section__title {
+  font-size: 36px;
+}
+
+.tilted-section__feature-grid {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  height: 100%;
+  padding-top: 5em;
+  width: 75%;
+  margin: 0 auto;
+  margin-bottom: 7.5em;
+}
+
+.tilted-section__feature {
+  flex: 1;
+  margin: 0 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.tilted-section__feature-icon {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 2em;
+}
+
+.tilted-section__feature-desc {
+  font-size: 14px;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.tilted-section__foot-content {
+  width: 25%;
+  min-width: 250px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.image-divider--big {
+  height: 40rem;
+  background: url('../../images/landing/2.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.content-section {
+  min-height: 250px;
+  text-align: center;
+  padding: 50px 0;
+  background-color: #fff;
+}
+
+.content-section > p {
+  margin: 0 auto;
+}
+
+.exclusive-releases__container {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 75px;
+}
+
+.exclusive-releases__item {
+  margin: 0 auto;
+  height: 300px;
+  width: 200px; 
+  position: relative;
+}
+
+.exclusive-releases__date-container {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background-color: #17171B;
+  top: -20px;
+  left: -20px;
+  z-index: 1;
+}
+
+.exclusive-releases__date {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.exclusive-releases__image {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+}
+
+.cover-1 {
+  background: url('../../images/landing/3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cover-2 {
+  background: url('../../images/landing/4.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.cover-3 {
+  background: url('../../images/landing/5.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.exclusive-releases__artist {
+  position: absolute;
+  margin: 0 auto;
+  width: 200px;
+  top: 115%;
+  font-size: 20px;
+}
+
+.image-divider {
+  height: 20rem;
+  background: url('../../images/landing/6.bmp') no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media (max-width: 1400px) {
+  .tilted-section__feature-grid {
+    width: 100%;
+  }
+  .exclusive-releases__container {
+    width: 95%;
+  }
+  .tilted-section__feature {
+    margin: 0 5%;
+  }
+}
+
+@media (max-width: 850px) {
+  .tilted-section {
+    padding: 50px 0;
+  }
+  .tilted-section__feature-grid {
+    flex-direction: column;
+  }
+  .tilted-section__feature {
+    margin: 2% 10%;
+  }
+  .content-section > p {
+    max-width: 75%;
+  }
+  .exclusive-releases__container {
+    flex-direction: column;
+  }
+  .exclusive-releases__item {
+    margin-bottom: 50px;
+  }
+  .exclusive-releases__item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-height: 650px) {
+  .header {
+    padding-top: 5vh;
+  }
+  .header__title {
+    font-size: 75px;
+  }
+  .header__slogan {
+    font-size: 16px;
+  }
+  .header__icon-container {
+    margin-top: -70px;
+  }
+  .header__scroll-icon {
+    width: 50px;
+    height: 50px;
+  }
+  .header__scroll-icon > i {
+    font-size: 35px;
+  }
+}

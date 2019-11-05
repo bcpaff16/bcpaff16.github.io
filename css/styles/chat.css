@@ -1,0 +1,143 @@
+.chat__container {
+  bottom: 55px;
+  height: 300px;
+  right: 0;
+  z-index: 1000;
+  overflow: hidden;
+  font-weight: 400;
+  color: white;
+  font-family: "Poppins";
+  display: none;
+}
+
+.chat__container i {
+  cursor: pointer;
+}
+
+.chat__contacts-box {
+  width: 250px;
+  height: 100%;
+  overflow: hidden;
+  bottom: -260px;
+}
+
+.chat__conversation-box {
+  width: 250px;
+  height: 100%;
+  overflow: hidden;
+  bottom: -260px;
+  visibility: hidden;
+}
+
+.chat__header {
+  height: 40px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, .02);
+  font-size: 14px;
+}
+
+.chat__header:hover {
+  background-color: rgba(255, 255, 255, .03);
+  cursor: pointer;
+}
+
+.chat__header-icons {
+  justify-content: flex-end;
+}
+
+.chat__body {
+  height: calc(100% - 40px);
+  background-color: rgba(120, 120, 120, .1);
+  overflow: auto;
+  font-size: 12px;
+}
+
+.chat__body::-webkit-scrollbar {
+  background: none;
+  width: 10px;
+}
+.chat__body::-webkit-scrollbar-thumb {
+  background:rgba(255, 255, 255, 0.2) !important;
+}
+
+.chat__conversation-box .chat__body {
+  height: calc(100% - 80px);
+}
+
+.contact__item {
+  height: 56px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 0 10px;
+}
+
+.contact__item:hover {
+  background-color: rgba(120, 120, 120, .1);
+  cursor: pointer;
+}
+
+.contact__item > .label {
+  padding: 2px 6px;
+  font-size: 12px;
+  padding-top: 4px;
+}
+
+.contact__image {
+  height: 44px;
+}
+
+.contact__name {
+  font-size: 13px;
+}
+
+.chat__input {
+  height: 35px;
+  display: inline-block;
+}
+
+.chat__footer {
+  font-size: 12px;
+}
+
+.chat__footer > input {
+  background-color: rgba(255, 255, 255, .02);
+  padding: 0 0 0 10px;
+  height: 40px;
+  border: none;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.chat__footer > button {
+  background-color: rgba(255, 255, 255, .02);
+  width: 70px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+.chat__footer > button:hover {
+  background-color: rgba(255, 255, 255, .04);
+}
+
+.chat__message-container {
+  padding: 5px 5px;
+  display: block;
+  overflow: hidden;
+}
+
+.chat__message {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 5px 10px;
+  max-width: 150px;
+  position: relative;
+}
+
+.chat__message--from {
+  float: left;
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.chat__message--to {
+  float: right;
+}
